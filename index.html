@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Jogo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="controle.png"type="image/png">
+</head>
+<body>
+
+    <h2>Mini Jogo Interativo</h2>
+    <div id="dialogo">Bem-vindo! Use as setas para mover o personagem.</div>
+
+    <div id="game-container">
+        <img id="enemy" src="dragao.png" alt="Jogador">
+        <img id="player" src="cavaleiro.png" alt="inimigo">
+    </div>
+
+    <h3>Vida do Jogador</h3>
+    <div class="vida-container">
+        <div id="vida-player" class="vida"></div>
+    </div>
+
+    <h3>Vida do Inimigo</h3>
+    <div class="vida-container">
+        <div id="vida-inimigo" class="vida"></div>
+    </div>
+
+    <button class="btn dano" onclick="alterarVida(-20)">⚔️ Tomar Dano</button>
+    <button class="btn cura" onclick="alterarVida(20)">💊 Curar</button>
+    <button class="btn loja" onclick="abrirLoja()">💰 Loja</button>
+    <button class="btn ataque" onclick="ataqueEspecial()">☄️ Ataque Especial</button>
+    <script src="main.js"></script>
+</body>
+</html>
